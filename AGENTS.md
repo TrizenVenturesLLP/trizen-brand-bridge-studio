@@ -28,3 +28,5 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+Marketing pages share a `src/components/marketing-site.tsx` shell and use independent TanStack file routes to support consistent navigation and per-page metadata.
