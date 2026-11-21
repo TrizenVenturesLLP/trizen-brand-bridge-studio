@@ -47,3 +47,7 @@ cd <repository-name>
 npm i
 npm run dev
 ```
+
+## CapRover deployment
+
+The repository root contains a `captain-definition` that builds the app with the included `Dockerfile`. Configure the CapRover app to deploy this repository's root; the container serves the production build on port 80.
