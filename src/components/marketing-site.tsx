@@ -81,10 +81,13 @@ export function SiteHeader() {
     <header className="relative z-20 border-b border-border bg-background">
       <div className="mx-auto flex h-[76px] max-w-[1440px] items-center justify-between px-5 sm:px-8 lg:px-12">
         <Link to="/" aria-label="Trizen Marketing home" onClick={() => setMenuOpen(false)} className="group flex items-center gap-2.5">
-          <span className="flex size-9 items-center justify-center rounded-md bg-trizen-blue text-base font-extrabold text-primary-foreground">T</span>
-          <span className="font-display text-lg font-extrabold leading-none text-foreground">
-            trizen<span className="ml-1 font-medium text-muted-foreground">marketing</span>
-          </span>
+          <img
+            src="/lovable-uploads/trizen-logo.png"
+            alt="Trizen"
+            width={1713}
+            height={393}
+            className="h-8 w-auto"
+          />
         </Link>
         <nav aria-label="Main navigation" className="hidden items-center gap-8 md:flex">
           {navigation.map((item) => (
@@ -138,7 +141,15 @@ export function SiteFooter() {
           </Button>
         </div>
         <div className="flex flex-col gap-5 pt-6 text-sm text-background/70 sm:flex-row sm:items-center sm:justify-between">
-          <Link to="/" className="font-display text-base font-bold text-background">trizen marketing<span className="ml-1 text-trizen-lime">®</span></Link>
+          <Link to="/" aria-label="Trizen Marketing home" className="inline-flex">
+            <img
+              src="/lovable-uploads/trizen-logo.png"
+              alt="Trizen"
+              width={1713}
+              height={393}
+              className="h-7 w-auto brightness-0 invert"
+            />
+          </Link>
           <a className="inline-flex items-center gap-2 hover:text-background" href={`mailto:${CONTACT_EMAIL}`}>
             <Mail aria-hidden="true" className="size-4" /> {CONTACT_EMAIL}
           </a>
