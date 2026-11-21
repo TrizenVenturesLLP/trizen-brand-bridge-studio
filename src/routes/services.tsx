@@ -28,8 +28,8 @@ function ServicesPage() {
       <section className="border-b border-border bg-secondary">
         <div className="mx-auto max-w-[1440px] px-5 py-20 sm:px-8 sm:py-24 lg:px-12 lg:py-28">
           <Eyebrow>What we do</Eyebrow>
-          <h1 className="max-w-4xl font-display text-5xl font-extrabold leading-[1.08] sm:text-6xl">One connected plan.<br /><span className="text-trizen-blue">More ways to be seen.</span></h1>
-          <p className="mt-7 max-w-2xl text-lg leading-8 text-muted-foreground">Strategy, channels, and campaign delivery—brought together around what your business wants to achieve.</p>
+          <h1 className="max-w-5xl font-display text-5xl font-extrabold leading-[1.08] sm:text-6xl">Integrated marketing.<br /><span className="text-trizen-blue">Clearer visibility. Real momentum.</span></h1>
+          <p className="mt-7 max-w-2xl text-lg leading-8 text-muted-foreground">Brand, media, outdoor, digital, community, and event expertise—combined around one practical plan for your market.</p>
         </div>
       </section>
       <section className="mx-auto max-w-[1440px] px-5 py-16 sm:px-8 sm:py-20 lg:px-12 lg:py-24">

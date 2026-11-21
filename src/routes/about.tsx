@@ -18,10 +18,10 @@ export const Route = createFileRoute("/about")({
 });
 
 const principles = [
-  { title: "Start with the why", text: "Every campaign begins with your business objectives, not a one-size-fits-all channel list.", icon: Building2 },
-  { title: "Think beyond the obvious", text: "We connect established media with emerging opportunities to make your presence work harder.", icon: RadioTower },
-  { title: "Bring the right people together", text: "A network of media owners, publishers, agencies, creators, and partners opens up new possibilities.", icon: Handshake },
-  { title: "Make it relevant here", text: "From local market promotions to broad-reaching brand campaigns, every plan has a place and an audience.", icon: MapPinned },
+  { title: "Start with the objective", text: "Every campaign begins with what your business needs to achieve—not a preset channel list.", icon: Building2 },
+  { title: "Think across the full journey", text: "We connect awareness, consideration, local visibility, and conversion into one coherent experience.", icon: RadioTower },
+  { title: "Bring the right partners together", text: "Media owners, agencies, creators, publishers, venues, and production teams work as one campaign team.", icon: Handshake },
+  { title: "Make every market relevant", text: "Plans adapt to the audience, geography, category, and moment—whether local or national.", icon: MapPinned },
 ];
 
 function AboutPage() {

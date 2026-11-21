@@ -163,9 +163,48 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-body);
+    -webkit-tap-highlight-color: transparent;
   }
 
   h1, h2, h3, h4 {
     font-family: var(--font-display);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 3px;
+  }
+
+  ::selection {
+    background: oklch(0.51 0.22 264 / 18%);
+  }
+}
+
+@layer components {
+  .btn-book {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    border: 1px solid oklch(0.51 0.22 264);
+    background: linear-gradient(135deg, oklch(0.51 0.22 264), oklch(0.43 0.21 264));
+    color: white;
+  }
+
+  .btn-book::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(135deg, oklch(0.44 0.22 264), oklch(0.56 0.21 264));
+    opacity: 0;
+    transition: opacity 180ms ease;
+  }
+
+  .btn-book:hover::before {
+    opacity: 1;
+  }
+
+  .btn-book:active {
+    transform: translateY(1px);
   }
 }
